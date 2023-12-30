@@ -9,29 +9,43 @@
 </head>
 <body>
     <!-- inicio del header -->
-<header>
-<!-- barra de navegacion -->
-
-<nav class="navbar">
-
-    <!-- estos van a la izquierda -->
-    <ul class="navbar-izquierda">
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="./tienda.html">Tienda</a></li>
-        <li><a href="./nosotros.html">Nosotros</a></li>
-        <li><a href="./ayuda_contacto.html">Ayuda y contacto</a></li>
-        </ul>
-        <div class="logo-container">
-            <a href="#"><img src="../assets/logo/mangastore-high-resolution-logo-transparent.png" alt="logo de la pagina"></a>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./tienda.html">Tienda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./ayuda_contacto.html">Ayuda y contacto</a>
+                </li>
+              </ul>
+              <div class="logo-container container-fluid d-flex justify-content-end ">
+                <a class="navbar-brand" href="#"><img src="../assets/logo/mangastore-high-resolution-logo-transparent.png" alt="logo de la pagina"></a>
+              </div>
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Iniciar Sesión</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Carrito</a>
+                </li>
+              </ul>
             </div>
-        <!-- estos van a la derecha -->
-        <ul class="navbar-derecha">
-        <li><a href="#">Iniciar Sesión</a></li>
-        <li><a href="#">Carrito</a></li>  
-        </ul>          
+          </div>
+        </nav>
+        </header>
 
-</nav>
-</header>
 
 
 <main>
@@ -46,37 +60,42 @@
 
 
 <!-- -------------------------------------------------------- -->
-<footer>
-    <div class="footer-things">
-        <!-- section para redes sociales -->
-        <section class="redes-footer">   
-            <!-- enlaces -->
-            <h4><strong>Conecta con nosotros</strong></h4>
-            <a href="https://www.facebook.com" target="_blank"><img src="../assets/img/facebook.png" alt="facebook"></a>
-            <a href="https://www.instagram.com" target="_blank"><img src="../assets/img/instagram.png" alt="instagram"></a>
-            <a href="https://twitter.com" target="_blank"><img src="../assets/img/gorjeo.png" alt="twiter"></a>
-            <a href="https://www.linkedin.com" target="_blank"><img src="../assets/img/linkedin.png" alt="linkedin"></a>
-        </section>
+<footer class="container-fluid py-4 bg-light">
+    <div class="row justify-content-between">
 
-            <div class="logo-container">
-                <a href="#"><img src="../assets/logo/mangastore-high-resolution-logo-transparent.png" alt="logo de la pagina"></a>
-            </div>
-
-        <section class="ubicacion-footer"> 
-            <!-- contactanos  -->
-            <h4><strong>contactanos</strong></h4>
-            <p>+54 9999999999</p>
-            <p>email@gmail.com</p>
-            <p>Messi 624, Mar Del Plata,Buenos Aires</p>
+    <div class="col-md-4 col-sm-6">
+        <section class="redes-footer">
+        <h4><strong>Conecta con nosotros</strong></h4>
+        <a href="https://www.facebook.com" target="_blank"><img src="../assets/img/facebook.png" alt="facebook"></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="../assets/img/instagram.png" alt="instagram"></a>
+        <a href="https://twitter.com" target="_blank"><img src="../assets/img/gorjeo.png" alt="twiter"></a>
+        <a href="https://www.linkedin.com" target="_blank"><img src="../assets/img/linkedin.png" alt="linkedin"></a>
         </section>
     </div>
 
-    <div class="copyright">
-        <small>© 2023 Mangastore. All rights reserved.</small>
+    <div class="col-md-4 col-sm-6 text-center">
+        <div class="logo-container">
+        <a href="#"><img src="../assets/logo/mangastore-high-resolution-logo-transparent.png" alt="logo de la pagina"  class="img-fluid"></a>
+        </div>
     </div>
 
+    <div class="col-md-4 col-sm-12">
+        <section class="ubicacion-footer">
+        <h4><strong>Contactanos</strong></h4>
+        <p>+54 9999999999</p>
+        <p>email@gmail.com</p>
+        <p>Messi 624, Mar Del Plata, Buenos Aires</p>
+        </section>
+    </div>
+
+    </div>
+
+    <div class="copyright text-center py-3">
+    <small>© 2023 Mangastore. All rights reserved.</small>
+    </div>
 
 </footer>
+
 <script src="../bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
