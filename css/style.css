@@ -1,0 +1,153 @@
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400;1,600&display=swap');
+/*font-family: 'Open Sans', sans-serif;*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+/*header*/
+header{ 
+background-color: black;
+}
+
+/*logo*/
+.logo-container {
+    width: 20%;
+}
+
+.logo-container a img {
+width: 20%;
+}
+
+
+/*navbar*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navbar-izquierda {
+    display: flex;
+    justify-content: start;
+}
+
+.navbar-derecha {
+    display: flex;
+    margin-left: auto; /*mueve los elementos a la derecha*/
+    justify-content: end;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*main*/
+main section h2 {
+    display: flex;
+    justify-content: center;
+    color: #282828;
+    font-size: 1.875rem;
+    font-weight: 800;
+    line-height: 1.3em;
+    letter-spacing: 0rem;
+}
+
+.helpContact section p {
+text-size-adjust: .9375rem;
+}
+
+/*card*/
+.contenedor-tienda{
+    background-color: lightgray;
+}
+
+.contenedor-cards{
+    display: flex;    /*flex-directiom, row por defecto*/
+    flex-wrap: wrap;    /*evita que los elementos se amontonen al disminuir el espacio*/
+
+
+}
+
+.card{
+    width: 18.75rem;
+    height: 25rem;
+    background-color: white;
+    text-align: center;
+    border: .0625rem solid black;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    margin-top: .9375rem;
+    margin-left: .625rem;
+    margin-right: .625rem;
+}
+
+
+/*footer*/
+footer {
+    background-color: blanchedalmond;
+    width: 100%;
+}
+
+footer .footer-things {
+    max-width: 75rem;/*maximo de ancho*/
+    margin: auto;/*para que se mantenga centrado*/
+    display: flex;
+    justify-content: space-between;
+    grid-gap:3.125rem ; /*para que cada coluna tenga un margen*/
+    padding: 2.8125rem 0rem;
+}
+
+footer .footer-things section {
+    color: black;
+    margin-bottom: 1.5625rem;
+    font-size: 1.25rem;
+}
+
+footer .footer-things section p {
+    color: #1a1a1a;
+    margin-bottom: .625rem;
+}
+
+.redes-footer a {
+margin-bottom: 1.25rem;
+flex-direction: column;
+}
+
+.footer-things .logo-container {
+    text-align: center;
+    width: 40%;
+}
+
+footer .copyright {
+    background-color: #1a1a1a;
+    padding: .9375rem .625rem;
+    text-align: left;
+    color: aliceblue;
+}
+
+footer .copyright small {
+    font-size: .9375rem;
+}
+
