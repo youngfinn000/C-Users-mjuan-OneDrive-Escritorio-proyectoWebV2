@@ -1,0 +1,28 @@
+/*utilities 1#*/
+@import"./utilities/functions";
+@import"./utilities/mixins";
+@import"./utilities/variables";
+/*layout2#*/
+@import"./layout/footer";
+@import"./layout/mainindex";
+@import"./layout/header.scss";
+/*base3#*/
+@import"./base/typographies";
+@import"./base/reset";
+@import "./base/media";
+/*components4#*/
+@import"./components/bootstrap";
+@import"./components/cards";
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+
+
+
+
+
+
+
+

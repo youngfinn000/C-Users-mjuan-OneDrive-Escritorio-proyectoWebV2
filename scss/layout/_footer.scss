@@ -1,0 +1,45 @@
+/*footer*/
+footer{
+    background-color: blanchedalmond;
+    width: 100%;
+    .footer-things{
+        max-width: 75rem;/*maximo de ancho*/
+        margin: auto;/*para que se mantenga centrado*/
+        display: flex;
+        justify-content: space-between;
+        grid-gap:3.125rem ; /*para que cada coluna tenga un margen*/
+        padding: 2.8125rem 0rem;
+
+        section{
+            color: black;
+            margin-bottom: 1.5625rem;
+            font-size: 1.25rem;
+            p{
+                color: #1a1a1a;
+                margin-bottom: .625rem;
+            }
+        }
+
+        .logo-container {
+            text-align: center;
+            width: 40%;
+        }
+
+        .copyright {
+            background-color: #1a1a1a;
+            padding: .9375rem .625rem;
+            text-align: left;
+            color: aliceblue;
+            small {
+                font-size: .9375rem;
+            }
+        }
+    }
+}
+
+.redes-footer {
+    a{
+        margin-bottom: 1.25rem;
+        flex-direction: column;   
+    }
+    }
