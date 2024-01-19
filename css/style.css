@@ -51,6 +51,13 @@ main section h2, main section .h2 {
 .helpContact section p {
   text-size-adjust: .9375rem; }
 
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: none; }
+
 /*base3#*/
 /*font-family: 'Open Sans', sans-serif;*/
 body {
