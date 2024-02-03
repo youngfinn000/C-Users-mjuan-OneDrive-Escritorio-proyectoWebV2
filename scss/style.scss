@@ -1,11 +1,11 @@
 /*utilities 1#*/
-@import"./utilities/functions";
+@import"./utilities/maps";
 @import"./utilities/mixins";
 @import"./utilities/variables";
 /*layout2#*/
-@import"./layout/footer";
-@import"./layout/mainindex";
 @import"./layout/header.scss";
+@import"./layout/mainindex";
+@import"./layout/footer";
 /*base3#*/
 @import"./base/typographies";
 @import"./base/reset";

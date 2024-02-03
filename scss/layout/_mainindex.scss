@@ -1,5 +1,7 @@
 /*main*/
 main {
+    background-color: map-get($color, color1);
+
     section {
         h2 {
             display: flex;
@@ -13,10 +15,38 @@ main {
     }
 }
 
+.items {
+    background-color: map-get($color, color2 );
+}
+
 .helpContact {
     section {
         p {
             text-size-adjust: .9375rem;
         }
     }
+}
+
+.carousel1 {
+    background-color: #f5f5f5;
+    padding: 2rem 0;
+
+    img {
+        width: 100%;
+        /* Ajusta el ancho al 100% del contenedor */
+        height: auto;
+        /* Establece una altura fija */
+        object-fit: cover;
+        /* Ajusta la imagen para cubrir el contenedor */
+    }
+}
+
+.carousel-indicators {
+    bottom: 0;
+}
+
+.carousel-caption {
+    bottom: 30%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
 }

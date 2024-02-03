@@ -40,6 +40,16 @@ footer{
 .redes-footer {
     a{
         margin-bottom: 1.25rem;
-        flex-direction: column;   
+        flex-direction: column;  
+        img{
+                font-size: 24px; /* Ajusta el tamaño general del icono */
+                width: 32px; /* Establece un ancho fijo */
+                max-height: 48px; /* Limita el alto máximo */
+                transform: scale(1.5); /* Escala el icono un 50% más grande */
+                margin-left: 1.25rem;
+                margin-bottom: 1.25rem;
+        }
     }
     }
+
+

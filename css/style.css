@@ -1,8 +1,78 @@
 @charset "UTF-8";
 /*utilities 1#*/
-/*layout2#*/
-/*footer*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400;1,600&display=swap");
+.preguntas details {
+  background-color: aqua;
+  font-size: large; }
+  .preguntas details summary {
+    background-color: azure;
+    font-size: larger; }
+
+/*layout2#*/
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: none; }
+  header nav.navbar {
+    width: 100%; }
+    header nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.h-100 {
+      width: 100%; }
+      header nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.h-100 .container .collapse .navbar-nav {
+        justify-content: flex-start; }
+        header nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.h-100 .container .collapse .navbar-nav .logo-container {
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          header nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.h-100 .container .collapse .navbar-nav .logo-container .navbar-brand {
+            margin-left: auto;
+            margin-top: auto; }
+            header nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.h-100 .container .collapse .navbar-nav .logo-container .navbar-brand img {
+              width: 3.125rem;
+              height: 3.125rem; }
+        header nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.h-100 .container .collapse .navbar-nav.ms-auto {
+          flex-grow: 1;
+          justify-content: flex-end; }
+
+/*main*/
+main {
+  background-color: #ffebd9; }
+  main section h2, main section .h2 {
+    display: flex;
+    justify-content: center;
+    color: #282828;
+    font-size: 1.875rem;
+    font-weight: 800;
+    line-height: 1.3em;
+    letter-spacing: 0rem; }
+
+.items {
+  background-color: #ff3939; }
+
+.helpContact section p {
+  text-size-adjust: .9375rem; }
+
+.carousel1 {
+  background-color: #f5f5f5;
+  padding: 2rem 0; }
+  .carousel1 img {
+    width: 100%;
+    /* Ajusta el ancho al 100% del contenedor */
+    height: auto;
+    /* Establece una altura fija */
+    object-fit: cover;
+    /* Ajusta la imagen para cubrir el contenedor */ }
+
+.carousel-indicators {
+  bottom: 0; }
+
+.carousel-caption {
+  bottom: 30%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff; }
+
+/*footer*/
 footer {
   background-color: blanchedalmond;
   width: 100%; }
@@ -37,26 +107,17 @@ footer {
 .redes-footer a {
   margin-bottom: 1.25rem;
   flex-direction: column; }
-
-/*main*/
-main section h2, main section .h2 {
-  display: flex;
-  justify-content: center;
-  color: #282828;
-  font-size: 1.875rem;
-  font-weight: 800;
-  line-height: 1.3em;
-  letter-spacing: 0rem; }
-
-.helpContact section p {
-  text-size-adjust: .9375rem; }
-
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: none; }
+  .redes-footer a img {
+    font-size: 24px;
+    /* Ajusta el tamaño general del icono */
+    width: 32px;
+    /* Establece un ancho fijo */
+    max-height: 48px;
+    /* Limita el alto máximo */
+    transform: scale(1.5);
+    /* Escala el icono un 50% más grande */
+    margin-left: 1.25rem;
+    margin-bottom: 1.25rem; }
 
 /*base3#*/
 /*font-family: 'Open Sans', sans-serif;*/
@@ -70,40 +131,117 @@ body {
 
 /*logo*/
 .logo-container {
-  width: 30%; }
-  .logo-container a img {
-    width: 30%; }
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .logo-container .navbar-brand {
+    margin-left: auto;
+    margin-top: auto; }
+    .logo-container .navbar-brand img {
+      width: 30%; }
 
 /*media */
+@media (min-width: 768px) {
+  .carousel-caption {
+    bottom: 20%; } }
+
 /*cards*/
+@media (max-width: 47.9375rem) {
+  .card {
+    width: 100%;
+    margin: 0; }
+    .card .card-img {
+      height: 20rem; }
+    .card .card-body {
+      padding: 0.5rem; } }
+
+@media (min-width: 48rem) {
+  .card {
+    width: 30rem;
+    margin: 1rem 2rem; }
+    .card .card-img {
+      height: 15rem; }
+    .card .card-body {
+      padding: 1rem; } }
+
 @media (max-width: 48rem) {
   .contenedor-cards .card {
     width: 95%;
-    height: auto; } }
-
-@media (max-width: 48rem) {
+    height: auto; }
   .contenedor-cards .card-title {
-    font-size: .75rem; } }
-
-@media (max-width: 48rem) {
-  .contenedor-cards .card-title {
-    font-size: .75rem; } }
-
-@media (max-width: 48rem) {
+    font-size: .75rem; }
   .contenedor-cards .btn {
     width: 80%;
     height: auto;
-    font-size: .75rem; } }
-
-@media (max-width: 48rem) {
+    font-size: .75rem; }
   .contenedor-cards .card-img-top {
     width: 60%;
     height: auto; } }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .contenedor-cards .card-img-top {
     float: none;
     margin: 0 auto; } }
+
+@media (min-width: 48rem) {
+  .card-container {
+    display: flex;
+    flex-wrap: wrap; }
+  .card {
+    width: 100%; } }
+
+@media (min-width: 48rem) and (max-width: 61.9375rem) {
+  .contenedor-cards .card {
+    width: 95%;
+    height: auto; }
+  .contenedor-cards .card-title {
+    font-size: .75rem; }
+  .contenedor-cards .btn {
+    width: 80%;
+    height: auto;
+    font-size: .75rem; }
+  .contenedor-cards .card-img-top {
+    width: 60%;
+    height: auto; } }
+
+@media (min-width: 48rem) and (max-width: 61.9375rem) {
+  .contenedor-cards .card-img-top {
+    float: none;
+    margin: 0 auto; } }
+
+@media (min-width: 48rem) and (max-width: 61.9375rem) {
+  .card-container {
+    display: flex;
+    flex-wrap: wrap; }
+  .card {
+    width: 100%; } }
+
+@media (min-width: 62rem) {
+  .contenedor-cards .card {
+    width: 95%;
+    height: auto; }
+  .contenedor-cards .card-title {
+    font-size: .75rem; }
+  .contenedor-cards .btn {
+    width: 80%;
+    height: auto;
+    font-size: .75rem; }
+  .contenedor-cards .card-img-top {
+    width: 60%;
+    height: auto; } }
+
+@media (max-width: 48rem) {
+  .contenedor-cards .card-img-top {
+    float: none;
+    margin: 0 auto; } }
+
+@media (min-width: 48rem) {
+  .card-container {
+    display: flex;
+    flex-wrap: wrap; }
+  .card {
+    width: 100%; } }
 
 /*components4#*/
 /* card */

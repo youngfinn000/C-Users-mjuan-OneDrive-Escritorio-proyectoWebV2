@@ -21,13 +21,17 @@
   <link rel="stylesheet" href="./bootstrap-5.3.2-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="shortcut icon" href="./assets/img/mangastore-high-resolution-logo-transparent_1_.ico" type="image/x-icon">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 
-<body>
+<body class="min-vh-100"> 
   <!-- inicio del header -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark h-100" >
+      <div class="container">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -47,10 +51,12 @@
               <a class="nav-link" href="./pages/ayuda_contacto.html">Ayuda y contacto</a>
             </li>
           </ul>
-          <div class="logo-container container-fluid d-flex justify-content-end ">
-            <a class="navbar-brand" href="#"><img src="./assets/logo/mangastore-high-resolution-logo-transparent.png"
+
+          <div class="logo-container  d-flex justify-content-center align-items-end ">
+            <a class="navbar-brand " href="#"><img src="./assets/logo/mangastore-high-resolution-logo-transparent.png"
                 alt="logo de la pagina"></a>
           </div>
+
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link" href="#">Iniciar Sesión</a>
@@ -67,73 +73,122 @@
   <!-- ------------------------------------------------------ -->
   <main  class="container">
 
+    <section class="carousel1">
+      <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/img/baner1.png" class="d-block w-100" alt="Imagen 1">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Todos los mangas que buscas</h3>
+                <p>en una sola pagina</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/baner2.png" class="d-block w-100" alt="Imagen 2">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>con descuentos al por mayor</h3>
+                <p>promocion para todo el 2024</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/baner3.png" class="d-block w-100" alt="Imagen 3">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>aceptamos targetas y transferencias</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/baner4.png" class="d-block w-100" alt="Imagen 4">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>puedes consultar los precios y tiempo de envio</h3>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
     <!-- seccion de ofertas -->
     <section class="container-fluid contenedor-ofertas">
-      <h2 class="text-center mb-4"><strong>Ofertas</strong></h2>
-      <div class="contenedor contenedor-cards row-cols-2">
+      <h2 class="text-center mb-4 animate__heartBeat animate__infinite 	infinite"><strong>Ofertas</strong></h2>
+      <div class="contenedor contenedor-cards row-cols-2 ">
         <div class="col-md-4 mb-4">
           <div class="card">
             <div class="card-body">
-              <img src="./assets/img/mangajjk.jpg" class="card-img-top" alt="manga de jujutsu kaisen">
-                <h3 class="card-title">Jujutsu kaisen 01</h3>
+              <img src="./assets/img/jujutsu00.jpg" class="card-img-top" alt="manga de jujutsu kaisen">
+                <h3 class="card-title">Jujutsu kaisen 00</h3>
                 <p class="card-text">$4000,00</p>
-                <button class="btn btn-danger">Agregar al carrito</button>
+                <button class="btn btn-danger animate__heartBeat">Agregar al carrito</button>
             </div>
           </div>
         </div>
         <div class="col-md-4 mb-4">
           <div class="card">
             <div class="card-body">
-              <img src="./assets/img/mangajjk.jpg" class="card-img-top" alt="manga de jujutsu kaisen">
+              <img src="./assets/img/jujutsu01.jpg" class="card-img-top"  alt="manga de jujutsu kaisen">
+              <h3 class="card-title">Jujutsu kaisen 01</h3>
+              <p class="card-text">$4000,00</p>
+              <button class="btn btn-danger animate__heartBeat">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <img src="./assets/img/jujutsu02.jpg" class="card-img-top" alt="manga de jujutsu kaisen">
               <h3 class="card-title">Jujutsu kaisen 02</h3>
               <p class="card-text">$4000,00</p>
-              <button class="btn btn-danger">Agregar al carrito</button>
+              <button class=" btn btn-danger animate__heartBeat">Agregar al carrito</button>
             </div>
           </div>
         </div>
         <div class="col-md-4 mb-4">
           <div class="card">
             <div class="card-body">
-              <img src="./assets/img/mangajjk.jpg" class="card-img-top" alt="manga de jujutsu kaisen">
+              <img src="./assets/img/jujutsu03.jpg" class="card-img-top" alt="manga de Blue exorsist">
               <h3 class="card-title">Jujutsu kaisen 03</h3>
               <p class="card-text">$4000,00</p>
-              <button class="btn btn-danger">Agregar al carrito</button>
+              <button class="btn btn-danger animate__heartBeat">Agregar al carrito</button>
             </div>
           </div>
         </div>
         <div class="col-md-4 mb-4">
           <div class="card">
             <div class="card-body">
-              <img src="./assets/img/mangabe.jpg" class="card-img-top" alt="manga de Blue exorsist">
-              <h3 class="card-title">Blue exorsist 01</h3>
+              <img src="./assets/img/jujutsu04.jpg" class="card-img-top" alt="manga de Blue exorsist">
+              <h3 class="card-title">Jujutsu kaisen 04</h3>
               <p class="card-text">$4000,00</p>
-              <button class="btn btn-danger">Agregar al carrito</button>
+              <button class="btn btn-danger animate__heartBeat">Agregar al carrito</button>
             </div>
           </div>
         </div>
         <div class="col-md-4 mb-4">
           <div class="card">
             <div class="card-body">
-              <img src="./assets/img/mangabe.jpg" class="card-img-top" alt="manga de Blue exorsist">
-              <h3 class="card-title">Blue exorsist 02</h3>
+              <img src="./assets/img/jujutsu05.jpg" class="card-img-top" alt="manga de Blue exorsist">
+              <h3 class="card-title">Jujutsu kaisen 05</h3>
               <p class="card-text">$4000,00</p>
-              <button class="btn btn-danger">Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <img src="./assets/img/mangabe.jpg" class="card-img-top" alt="manga de Blue exorsist">
-              <h3 class="card-title">Blue exorsist 03</h3>
-              <p class="card-text">$4000,00</p>
-              <button class="btn btn-danger">Agregar al carrito</button>
+              <button class="btn btn-danger animate__heartBeat">Agregar al carrito</button>
             </div>
 
 
     </section>
     <!-- tarjetas de productos -->
-    <section class="container-fluid contenedor-ofertas">
+    <section class="container-fluid ">
       <h2 class="text-center mb-4"><strong>Colgantes</strong></h2>
       <div class="contenedor contenedor-cards row-cols-2">
           <div class=" col-md-4 mb-4">
@@ -216,10 +271,10 @@
       <div class="col-md-4 col-sm-6">
         <section class="redes-footer">
           <h4><strong>Conecta con nosotros</strong></h4>
-          <a href="https://www.facebook.com" target="_blank"><img src="./assets/img/facebook.png" alt="facebook"></a>
-          <a href="https://www.instagram.com" target="_blank"><img src="./assets/img/instagram.png" alt="instagram"></a>
-          <a href="https://twitter.com" target="_blank"><img src="./assets/img/gorjeo.png" alt="twiter"></a>
-          <a href="https://www.linkedin.com" target="_blank"><img src="./assets/img/linkedin.png" alt="linkedin"></a>
+          <a href="https://www.linkedin.com" target="_blank"><img src="./assets/img/logotipo-de-linkedin.png" alt="linkedin"></a>
+          <a href="https://twitter.com" target="_blank"><img src="./assets/img/gorjeo (1).png" alt="twiter"></a>
+          <a href="https://www.instagram.com" target="_blank"><img src="./assets/img/instagram (1).png" alt="instagram"></a>
+          <a href="https://www.facebook.com" target="_blank"><img src="./assets/img/facebook (1).png" alt="facebook"></a>
         </section>
       </div>
 

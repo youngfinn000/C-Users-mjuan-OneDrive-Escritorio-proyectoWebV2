@@ -7,7 +7,13 @@
 /*logo*/
 .logo-container {
     width: 30%;
-    a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .navbar-brand 
+    {
+        margin-left: auto; // Centra la imagen horizontalmente
+        margin-top: auto; // Centra la imagen verticalmente
         img{
             width: 30%;
         }

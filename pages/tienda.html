@@ -1,247 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="manga, anime, tienda online, argentina, comprar">
-    <meta name="author" content="Laureano Martin Falcon">
-    <meta name="copyright" content="Mangastore">
-    <meta name="revised" content=""> <!--meta que muestra ultimas modificaciones-->
-    <!-- meta opegraph -->
-    <meta property="og:title" content="Mangastore - tienda de manga y anime"> 
-    <meta property="og:description" content=""> <!--no puede superar los 50 caracteres-->
-    <meta property="og:image" content="https://aiptcomics.com/wp-content/uploads/2019/12/824521._SX1280_QL80_TTD_.jpg" >
-    <title>mangastore</title>
-    <link rel="stylesheet" href="../bootstrap-5.3.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="../assets/img/mangastore-high-resolution-logo-transparent_1_.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="manga, anime, tienda online, argentina, comprar">
+  <meta name="author" content="Laureano Martin Falcon">
+  <meta name="copyright" content="Mangastore">
+  <meta name="revised" content=""> <!--meta que muestra ultimas modificaciones-->
+  <!-- meta opegraph -->
+  <meta property="og:title" content="Mangastore - tienda de manga y anime">
+  <meta property="og:description" content=""> <!--no puede superar los 50 caracteres-->
+  <meta property="og:image" content="https://aiptcomics.com/wp-content/uploads/2019/12/824521._SX1280_QL80_TTD_.jpg">
+  <title>mangastore</title>
+  <link rel="stylesheet" href="../bootstrap-5.3.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="shortcut icon" href="../assets/img/mangastore-high-resolution-logo-transparent_1_.ico" type="image/x-icon">
 </head>
+
 <body>
-    <!-- inicio del header -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Tienda</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./ayuda_contacto.html">Ayuda y contacto</a>
-                </li>
-              </ul>
-              <div class="logo-container container-fluid d-flex justify-content-end ">
-                <a class="navbar-brand" href="#"><img src="../assets/logo/mangastore-high-resolution-logo-transparent.png" alt="logo de la pagina"></a>
-              </div>
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Iniciar Sesión</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./carrito.html">Carrito</a>
-                </li>
-              </ul>
-            </div>
+  <!-- inicio del header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark h-100">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./ayuda_contacto.html">Ayuda y contacto</a>
+            </li>
+          </ul>
+          <div class="logo-container  d-flex justify-content-center align-items-end ">
+            <a class="navbar-brand" href="#"><img src="../assets/logo/mangastore-high-resolution-logo-transparent.png"
+                alt="logo de la pagina"></a>
           </div>
-        </nav>
-        </header>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Iniciar Sesión</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./carrito.html">Carrito</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
 
-<!-- ------------------------------------------------------- -->
-<main class="container">
+  <!-- ------------------------------------------------------- -->
+  <main class="container contenedor-tienda">
 
     <h1 class="text-center mb-5">Nuestros productos</h1>
 
-    <section class="container-fluid contenedor-ofertas">
-        <h2 class="text-center mb-4"><strong>Colgantes</strong></h2>
+    <section class="container-fluid">
+      <h3 class="text-center mb-4 items "><strong>Colgantes</strong></h3>
+      <div class="contenedor contenedor-cards row-cols-2">
+        <div class=" col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <img src="../assets/img/colgante-ua-boku-no-hero-300x300.jpg" class="card-img-top" alt="Collar">
+              <h3 class="card-title">Colgante de My Hero Academy</h3>
+              <p class="card-text">$3500,00</p>
+              <a href="#" class="btn btn-danger">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+        <!-- producto -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <img src="../assets/img/bluelock-colgante-300x300.jpeg" class="card-img-top" alt="Collar">
+              <h3 class="card-title">Colgante de Bluelock</h3>
+              <p class="card-text">$3500,00</p>
+              <a href="#" class="btn btn-danger">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+        <!-- producto -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <img src="../assets/img/colgante-ace-one-piece-1-300x300.jpeg" class="card-img-top" alt="Collar">
+              <h3 class="card-title">Colgante de mi hermano Ace</h3>
+              <p class="card-text">$3500,00</p>
+              <a href="#" class="btn btn-danger">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+        <!-- producto -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <img src="../assets/img/colgante-del-sombrero-de-paja-300x300.jpg" class="card-img-top" alt="Collar">
+              <h3 class="card-title">Colgante de Mugiwara no Luffy</h3>
+              <p class="card-text">$3500,00</p>
+              <a href="#" class="btn btn-danger">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+        <!-- producto -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <img src="../assets/img/colgante-marca-berserk-300x300.webp" class="card-img-top" alt="Collar">
+              <h3 class="card-title">Colgante de Berserk</h3>
+              <p class="card-text">$3500,00</p>
+              <a href="#" class="btn btn-danger">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+        <!-- producto -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <img src="../assets/img/edens-zero-colgante-rebecca-300x300.jpg" class="card-img-top" alt="Collar">
+              <h3 class="card-title">Colgante de Edens Zero</h3>
+              <p class="card-text">$3500,00</p>
+              <a href="#" class="btn btn-danger">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="container-fluid">
+      <h3 class="text-center mb-4 items "><strong>Mangas</strong></h3>
+      <h4 class="text-center mb-3"><strong>Jujutsu Kaisen</strong></h4>
+      <div class="contenedor contenedor-cards row-cols-2">
+        <!-- producto -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <img src="../assets/img/jujutsu00.jpg" class="card-img-top" alt="manga de jujutsu kaisen">
+              <h3 class="card-title">Jujutsu Kaisen 00</h3>
+              <p class="card-text">$4000,00</p>
+              <a href="#" class="btn btn-danger">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+        <!-- producto -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <img src="../assets/img/jujutsu023.jpg" class="card-img-top" alt="manga de jujutsu kaisen">
+              <h3 class="card-title">Jujutsu Kaisen 23</h3>
+              <p class="card-text">$4000,00</p>
+              <a href="#" class="btn btn-danger">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+        <!-- producto -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <img src="../assets/img/jujutsu19.jpg" class="card-img-top" alt="manga de jujutsu kaisen">
+              <h3 class="card-title">Jujutsu Kaisen 19</h3>
+              <p class="card-text">$4000,00</p>
+              <a href="#" class="btn btn-danger">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+        <!-- producto -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <img src="../assets/img/jujutsu21.jpg" class="card-img-top" alt="manga de jjk">
+              <h3 class="card-title">Jujutsu Kaisen 21</h3>
+              <p class="card-text">$4000,00</p>
+              <a href="#" class="btn btn-danger">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+        <!-- producto -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+            <img src="../assets/img/jujutsu10.jpg" class="card-img-top" alt="manga de jjk">
+              <h3 class="card-title">Jujutsu Kaisen 10</h3>
+              <p class="card-text">$4000,00</p>
+              <a href="#" class="btn btn-danger">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+        <!-- producto -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <img src="../assets/img/jujutsu09.jpg" class="card-img-top" alt="manga de jjk">
+              <h3 class="card-title">Jujutsu Kaisen 09</h3>
+              <p class="card-text">$4000,00</p>
+              <a href="#" class="btn btn-danger">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+        </div>
+        <h4 class="text-center mb-3 "><strong>Frieren</strong></h4>
         <div class="contenedor contenedor-cards row-cols-2">
-            <div class=" col-md-4 mb-4">
-              <div class="card">
-                <div class="card-body">
-                  <img src="../assets/img/colgante-ua-boku-no-hero-300x300.jpg" class="card-img-top" alt="Collar">
-                    <h3 class="card-title">Colgante de My Hero Academy</h3>
-                    <p class="card-text">$3500,00</p>
-                    <a href="#" class="btn btn-danger">Agregar al carrito</a>
-                  </div>
-                </div>
-              </div>
-              <!-- producto -->
-              <div class="col-md-4 mb-4">
-                <div class="card">
-                  <div class="card-body">
-                  <img src="../assets/img/bluelock-colgante-300x300.jpeg" class="card-img-top" alt="Collar">
-                    <h3 class="card-title">Colgante de Bluelock</h3>
-                    <p class="card-text">$3500,00</p>
-                    <a href="#" class="btn btn-danger">Agregar al carrito</a>
-                  </div>
-                </div>
-              </div>
-              <!-- producto -->
-              <div class="col-md-4 mb-4">
-                <div class="card">
-                  <div class="card-body">
-                  <img src="../assets/img/colgante-ace-one-piece-1-300x300.jpeg" class="card-img-top" alt="Collar">
-                    <h3 class="card-title">Colgante de mi hermano Ace</h3>
-                    <p class="card-text">$3500,00</p>
-                    <a href="#" class="btn btn-danger">Agregar al carrito</a>
-                  </div>
-                </div>
-              </div>
-              <!-- producto -->
-              <div class="col-md-4 mb-4">
-                <div class="card">
-                  <div class="card-body">
-                  <img src="../assets/img/colgante-del-sombrero-de-paja-300x300.jpg" class="card-img-top" alt="Collar">
-                    <h3 class="card-title">Colgante de Mugiwara no Luffy</h3>
-                    <p class="card-text">$3500,00</p>
-                    <a href="#" class="btn btn-danger">Agregar al carrito</a>
-                  </div>
-                </div>
-              </div>
-              <!-- producto -->
-              <div class="col-md-4 mb-4">
-                <div class="card">
-                  <div class="card-body">
-                  <img src="../assets/img/colgante-marca-berserk-300x300.webp" class="card-img-top" alt="Collar">
-                    <h3 class="card-title">Colgante de Berserk</h3>
-                    <p class="card-text">$3500,00</p>
-                    <a href="#" class="btn btn-danger">Agregar al carrito</a>
-                  </div>
-                </div>
-              </div>
-              <!-- producto -->
-              <div class="col-md-4 mb-4">
-                <div class="card">
-                  <div class="card-body">
-                  <img src="../assets/img/edens-zero-colgante-rebecca-300x300.jpg" class="card-img-top" alt="Collar">
-                    <h3 class="card-title">Colgante de Edens Zero</h3>
-                    <p class="card-text">$3500,00</p>
-                    <a href="#" class="btn btn-danger">Agregar al carrito</a>
-                  </div>
-                </div>
+          <!-- producto -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <img src="../assets/img/frieren01.png" class="card-img-top" alt="manga de Frieren">
+                <h3 class="card-title">Frieren 01</h3>
+                <p class="card-text">$4500,00</p>
+                <a href="#" class="btn btn-danger">Agregar al carrito</a>
               </div>
             </div>
           </div>
-          </section>
-          <section class="py-4">
-            <h2 class="text-center mb-4">Mangas</h2>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-              <!-- producto -->
-              <div class="col-md-4 mb-4">
-                <div class="card">
-                  <div class="card-body">
-                  <img src="../assets/img/mangajjk.jpg" class="card-img-top" alt="manga de jujutsu kaisen">
-                    <h3 class="card-title">Jujutsu Kaisen 01</h3>
-                    <p class="card-text">$4000,00</p>
-                    <a href="#" class="btn btn-danger">Agregar al carrito</a>
-                  </div>
-                </div>
-              </div>
-              <!-- producto -->
-              <div class="col-md-4 mb-4">
-                <div class="card">
-                  <div class="card-body">
-                  <img src="../assets/img/mangajjk.jpg" class="card-img-top" alt="manga de jujutsu kaisen">
-                    <h3 class="card-title">Jujutsu Kaisen 02</h3>
-                    <p class="card-text">$4000,00</p>
-                    <a href="#" class="btn btn-danger">Agregar al carrito</a>
-                  </div>
-                </div>
-              </div>
-              <!-- producto -->
-              <div class="col-md-4 mb-4">
-                <div class="card">
-                  <div class="card-body">
-                  <img src="../assets/img/mangajjk.jpg" class="card-img-top" alt="manga de jujutsu kaisen">
-                    <h3 class="card-title">Jujutsu Kaisen 03</h3>
-                    <p class="card-text">$4000,00</p>
-                    <a href="#" class="btn btn-danger">Agregar al carrito</a>
-                  </div>
-                </div>
-              </div>
-              <!-- producto -->
-              <div class="col-md-4 mb-4">
-                <div class="card">
-                  <div class="card-body">
-                  <img src="../assets/img/mangabe.jpg" class="card-img-top" alt="manga de Blue exorsist">
-                    <h3 class="card-title">Blue Exorcist 01</h3>
-                    <p class="card-text">$4000,00</p>
-                    <a href="#" class="btn btn-danger">Agregar al carrito</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 mb-4">
-                <div class="card">
-                  <img src="../assets/img/mangabe.jpg" class="card-img-top" alt="manga de Blue exorsist">
-                  <div class="card-body">
-                    <h3 class="card-title">Blue Exorcist 02</h3>
-                    <p class="card-text">$4000,00</p>
-                    <a href="#" class="btn btn-danger">Agregar al carrito</a>
-                  </div>
-                </div>
-              </div>
-              <!-- producto -->
-              <div class="col-md-4 mb-4">
-                <div class="card">
-                  <div class="card-body">
-                  <img src="../assets/img/mangabe.jpg" class="card-img-top" alt="manga de Blue exorsist">
-                    <h3 class="card-title">Blue Exorcist 03</h3>
-                    <p class="card-text">$4000,00</p>
-                    <a href="#" class="btn btn-danger">Agregar al carrito</a>
-                  </div>
-                </div>
+          <!-- producto -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <img src="../assets/img/frieren02.png" class="card-img-top" alt="manga de Frieren">
+                <h3 class="card-title">Frieren 02</h3>
+                <p class="card-text">$4500,00</p>
+                <a href="#" class="btn btn-danger">Agregar al carrito</a>
               </div>
             </div>
-          </section>
-</main>
+          </div>
+          <!-- producto -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <img src="../assets/img/frieren03.png" class="card-img-top" alt="manga de Frieren">
+                <h3 class="card-title">Frieren 03</h3>
+                <p class="card-text">$4500,00</p>
+                <a href="#" class="btn btn-danger">Agregar al carrito</a>
+              </div>
+            </div>
+          </div>
+          <!-- producto -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <img src="../assets/img/frieren04.png" class="card-img-top" alt="manga de Frieren">
+                <h3 class="card-title">Frieren 04</h3>
+                <p class="card-text">$4500,00</p>
+                <a href="#" class="btn btn-danger">Agregar al carrito</a>
+              </div>
+            </div>
+          </div>
+          <!-- producto -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <img src="../assets/img/frieren05.png" class="card-img-top" alt="manga de Frieren">
+                <h3 class="card-title">Frieren 05</h3>
+                <p class="card-text">$4500,00</p>
+                <a href="#" class="btn btn-danger">Agregar al carrito</a>
+              </div>
+            </div>
+          </div>
+          <!-- producto -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <img src="../assets/img/frieren06.png" class="card-img-top" alt="manga de Frieren">
+                <h3 class="card-title">Frieren 06</h3>
+                <p class="card-text">$4500,00</p>
+                <a href="#" class="btn btn-danger">Agregar al carrito</a>
+              </div>
+            </div>
+          </div>
+          <!-- producto -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <img src="../assets/img/frieren07.png" class="card-img-top" alt="manga de Frieren">
+                <h3 class="card-title">Frieren 07</h3>
+                <p class="card-text">$4500,00</p>
+                <a href="#" class="btn btn-danger">Agregar al carrito</a>
+              </div>
+            </div>
+          </div>
+          <!-- producto -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <img src="../assets/img/frieren08.png" class="card-img-top" alt="manga de Frieren">
+                <h3 class="card-title">Frieren 08</h3>
+                <p class="card-text">$4500,00</p>
+                <a href="#" class="btn btn-danger">Agregar al carrito</a>
+              </div>
+            </div>
+          </div>
+          <!-- producto -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <img src="../assets/img/frieren09.png" class="card-img-top" alt="manga de Frieren">
+                <h3 class="card-title">Frieren 09</h3>
+                <p class="card-text">$4500,00</p>
+                <a href="#" class="btn btn-danger">Agregar al carrito</a>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </section>
+  </main>
 
 
-<!-- -------------------------------------------------------- -->
-<footer class="container-fluid py-4 bg-light">
+  <!-- -------------------------------------------------------- -->
+  <footer class="container-fluid py-4 bg-light">
     <div class="row justify-content-between">
 
-    <div class="col-md-4 col-sm-6">
+      <div class="col-md-4 col-sm-6">
         <section class="redes-footer">
-        <h4><strong>Conecta con nosotros</strong></h4>
-        <a href="https://www.facebook.com" target="_blank"><img src="../assets/img/facebook.png" alt="facebook"></a>
-        <a href="https://www.instagram.com" target="_blank"><img src="../assets/img/instagram.png" alt="instagram"></a>
-        <a href="https://twitter.com" target="_blank"><img src="../assets/img/gorjeo.png" alt="twiter"></a>
-        <a href="https://www.linkedin.com" target="_blank"><img src="../assets/img/linkedin.png" alt="linkedin"></a>
+          <h4><strong>Conecta con nosotros</strong></h4>
+          <a href="https://www.linkedin.com" target="_blank"><img src="../assets/img/logotipo-de-linkedin.png"
+              alt="linkedin"></a>
+          <a href="https://twitter.com" target="_blank"><img src="../assets/img/gorjeo (1).png" alt="twiter"></a>
+          <a href="https://www.instagram.com" target="_blank"><img src="../assets/img/instagram (1).png"
+              alt="instagram"></a>
+          <a href="https://www.facebook.com" target="_blank"><img src="../assets/img/facebook (1).png"
+              alt="facebook"></a>
         </section>
-    </div>
+      </div>
 
-    <div class="col-md-4 col-sm-6 text-center">
+      <div class="col-md-4 col-sm-6 text-center">
         <div class="logo-container">
-        <a href="#"><img src="../assets/logo/mangastore-high-resolution-logo-transparent.png" alt="logo de la pagina"  class="img-fluid"></a>
+          <a href="#"><img src="../assets/logo/mangastore-high-resolution-logo-transparent.png" alt="logo de la pagina"
+              class="img-fluid"></a>
         </div>
-    </div>
+      </div>
 
-    <div class="col-md-4 col-sm-12">
+      <div class="col-md-4 col-sm-12">
         <section class="ubicacion-footer">
-        <h4><strong>Contactanos</strong></h4>
-        <p>+54 9999999999</p>
-        <p>email@gmail.com</p>
-        <p>Messi 624, Mar Del Plata, Buenos Aires</p>
+          <h4><strong>Contactanos</strong></h4>
+          <p>+54 9999999999</p>
+          <p>email@gmail.com</p>
+          <p>Messi 624, Mar Del Plata, Buenos Aires</p>
         </section>
-    </div>
+      </div>
 
     </div>
 
     <div class="copyright text-center py-3">
-    <small>© 2023 Mangastore. All rights reserved.</small>
+      <small>© 2023 Mangastore. All rights reserved.</small>
     </div>
 
-</footer>
+  </footer>
 
-<script src="../bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+  <script src="../bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>

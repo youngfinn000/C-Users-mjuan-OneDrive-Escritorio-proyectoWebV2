@@ -1,4 +1,61 @@
-header{
+header {
+    @include flex(row, space-between, center, none);
 
-    @include flex(row, space-between, center, none)
+    nav.navbar {
+        width: 100%;
+        &.navbar-expand-lg {
+            &.navbar-dark {
+                &.bg-dark {
+                    &.h-100 {
+                        // Estilos generales del header
+                        width: 100%; // Asegura que ocupa todo el ancho
+
+                        .container {
+                            // Estilos del contenedor interno
+
+                            .navbar-toggler {
+                                // Estilos del botón toggler
+                            }
+
+                            .collapse {
+                                // Estilos del menú colapsable
+
+                                .navbar-nav {
+                                    // Estilos de los enlaces de navegación
+                                    justify-content: flex-start;
+
+
+                                    .logo-container {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+
+                                        .navbar-brand {
+                                            // Estilos del logo
+                                            margin-left: auto; // Centra la imagen horizontalmente
+                                            margin-top: auto; // Centra la imagen verticalmente
+
+                                            img {
+                                                // Estilos de la imagen del logo
+                                                width: 3.125rem; // Ajusta el tamaño del logo
+                                                height: 3.125rem; // Mantiene la proporción
+
+
+                                            }
+                                        }
+                                    }
+
+                                    &.ms-auto {
+                                        // Estilos de los enlaces a la derecha
+                                        flex-grow: 1;
+                                        justify-content: flex-end;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

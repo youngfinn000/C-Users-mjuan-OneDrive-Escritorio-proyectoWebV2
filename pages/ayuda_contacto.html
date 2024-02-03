@@ -21,7 +21,7 @@
     <!-- inicio del header -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <div class="container-fluid">
+          <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -40,7 +40,7 @@
                   <a class="nav-link" href="#">Ayuda y contacto</a>
                 </li>
               </ul>
-              <div class="logo-container container-fluid d-flex justify-content-end ">
+              <div class="logo-container  d-flex justify-content-center align-items-end ">
                 <a class="navbar-brand" href="#"><img src="../assets/logo/mangastore-high-resolution-logo-transparent.png" alt="logo de la pagina"></a>
               </div>
               <ul class="navbar-nav ms-auto">
@@ -58,37 +58,91 @@
 
 
 <main class="container-fluid helpContact">
-    <a href="#finalpagina">contactate aqui</a>
+    <a href="#finalpagina">            <button type="submit" class="btn btn-info">
+      contactate aqui
+</button></a>
 <!-- seccion ayuda  -->
 <section>
     <h2>ayuda</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quae vel
-    necessitatibus hic possimus animi asperiores reprehenderit libero ratione explicabo
-    ullam enim maxime optio molestiae saepe, dignissimos beatae nulla illo!</p>
+    <p>¡Encuentra respuestas a tus preguntas y contáctanos!
+      Sección de ayuda
+      ¡Encuentra respuestas a tus preguntas y contáctanos!
+
+      En esta sección encontrarás respuestas a las preguntas más comunes sobre nuestro producto o servicio. Te invitamos a navegar por las diferentes categorías para encontrar la información que necesitas.
+    
+
+
+
+Si no encuentras la respuesta a tu pregunta en las preguntas frecuentes, puedes utilizar el siguiente formulario para contactarnos. Nuestro equipo de atención al cliente estará encantado de ayudarte.
+    </p>
 </section>
 
 <!-- Preguntas frecuentes(F.A.Q)​ -->
-<section>
+<section class="preguntas">
     <h2>Preguntas frecuentes( F.A.Q) </h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed consequatur quaerat 
-    laudantium beatae. Nesciunt rerum sint ad, corporis explicabo rem, reprehenderit
-    expedita consectetur aliquam asperiores provident illum, animi vel ut.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed consequatur quaerat 
-        laudantium beatae. Nesciunt rerum sint ad, corporis explicabo rem, reprehenderit
-        expedita consectetur aliquam asperiores provident illum, animi vel ut.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed consequatur quaerat 
-            laudantium beatae. Nesciunt rerum sint ad, corporis explicabo rem, reprehenderit
-            expedita consectetur aliquam asperiores provident illum, animi vel ut.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed consequatur quaerat 
-                laudantium beatae. Nesciunt rerum sint ad, corporis explicabo rem, reprehenderit
-                expedita consectetur aliquam asperiores provident illum, animi vel ut.</p>
+    <details>
+      <summary>
+        ¿Cuál es su política de devoluciones?
+      </summary>
+      Su política de devoluciones permite devolver los mangas en un plazo de 30 días desde la fecha de recepción.
+    </details>
+<!-- --------------- -->
+<details>
+  <summary>
+    ¿Cómo puedo hacer un seguimiento de mi pedido?
+  </summary>
+  Para hacer un seguimiento de tu pedido, puedes acceder a tu cuenta y consultar el estado de tu pedido.
+</details>
+<!-- --------------- -->
+<details>
+  <summary>
+    ¿Cómo puedo realizar un pedido?
+  </summary>
+  Para realizar un pedido, debes seleccionar los mangas que deseas comprar y añadirlos al carrito. A continuación, debes rellenar tus datos de envío y pago y confirmar el pedido.
+</details>
+<!-- --------------- -->
+<details>
+  <summary>
+    ¿Cómo puedo pagar los mangas?
+  </summary>
+  Aceptan pagos con tarjeta de crédito, débito y PayPal.
+</details>
+<!-- --------------- -->
+<details>
+  <summary>
+    ¿Cuánto cuestan los mangas?
+  </summary>
+  El precio de los mangas varía según el título, el formato y la calidad.
+</details>
+<!-- --------------- -->
+<details>
+  <summary>
+    ¿Qué mangas son los más populares?
+  </summary>
+  Los mangas más populares son los que están en emisión o que han sido recientemente publicados.
+</details>
+<!-- --------------- -->
+<details>
+  <summary>
+    ¿Hay mangas de todos los géneros?
+  </summary>
+  Sí, tienen mangas de todos los géneros.
+</details>
+<!-- --------------- -->
+<details>
+  <summary>
+    ¿Hay mangas en español?
+  </summary>
+  Sí, tienen mangas en español.
+</details>
+<!-- --------------- -->
 </section>
 
 <!-- seccion contacto -->
 <h2 id="finalpagina">contacto</h2>
 
 <!-- formulario con bootstrap -->
-<div class="container-fluid">
+<div class="container-fluid ">
     <form class="row g-3 mt-3" >
 <!-- email -->
         <div class="col-12">
@@ -112,7 +166,7 @@
         </div>
         <!--postal code  -->
         <div class="col-3">
-            <label for="postalCodeInput" class="form-label">Codigo postal</label>
+            <label for="postalCodeInput" class="form-label">C.P.</label>
             <input type="text" class="form-control" id="postalCodeInput" placeholder="codigo postal">
         </div>
 <!-- country -->
@@ -133,7 +187,7 @@
         </div>
 <!-- send -->
         <div class="col-12">
-            <button type="submit" class="btn btn-primary">
+            <button type="submit" class="btn btn-info">
                     enviar
             </button>
         </div>
@@ -149,13 +203,41 @@
       <div class="col-md-4 col-sm-6">
         <section class="redes-footer">
           <h4><strong>Conecta con nosotros</strong></h4>
-          <a href="https://www.facebook.com" target="_blank"><img src="../assets/img/facebook.png" alt="facebook"></a>
-          <a href="https://www.instagram.com" target="_blank"><img src="../assets/img/instagram.png" alt="instagram"></a>
-          <a href="https://twitter.com" target="_blank"><img src="../assets/img/gorjeo.png" alt="twiter"></a>
-          <a href="https://www.linkedin.com" target="_blank"><img src="../assets/img/linkedin.png" alt="linkedin"></a>
+          <a href="https://www.linkedin.com" target="_blank"><img src="../assets/img/logotipo-de-linkedin.png" alt="linkedin"></a>
+          <a href="https://twitter.com" target="_blank"><img src="../assets/img/gorjeo (1).png" alt="twiter"></a>
+          <a href="https://www.instagram.com" target="_blank"><img src="../assets/img/instagram (1).png" alt="instagram"></a>
+          <a href="https://www.facebook.com" target="_blank"><img src="../assets/img/facebook (1).png" alt="facebook"></a>
         </section>
       </div>
   
+      <div class="col-md-4 col-sm-6">
+        <section class="redes-footer d-flex justify-content-center align-items-center">
+          <h4 class="mb-3"><strong>Conecta con nosotros</strong></h4>
+          <ul class="list-unstyled d-flex mx-auto">
+            <li class="me-4">
+              <a href="https://www.facebook.com" target="_blank" class="text-decoration-none">
+                <i class="fab fa-facebook-f fa-2x text-primary"></i>
+              </a>
+            </li>
+            <li class="me-4">
+              <a href="https://www.instagram.com" target="_blank" class="text-decoration-none">
+                <i class="fab fa-instagram fa-2x text-primary"></i>
+              </a>
+            </li>
+            <li class="me-4">
+              <a href="https://twitter.com" target="_blank" class="text-decoration-none">
+                <i class="fab fa-twitter fa-2x text-primary"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com" target="_blank" class="text-decoration-none">
+                <i class="fab fa-linkedin-in fa-2x text-primary"></i>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+
       <div class="col-md-4 col-sm-6 text-center">
         <div class="logo-container">
           <a href="#"><img src="../assets/logo/mangastore-high-resolution-logo-transparent.png" alt="logo de la pagina"  class="img-fluid"></a>
