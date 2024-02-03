@@ -16,7 +16,7 @@ main {
 }
 
 .items {
-    background-color: map-get($color, color2 );
+    background-color: map-get($color, color2);
 }
 
 .helpContact {
@@ -49,4 +49,28 @@ main {
     bottom: 30%;
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
+}
+
+.mainCarrito{
+    background-color: map-get($color, color3 );
+    padding: 2rem 0;
+
+    .containerCarrito {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .cartelCarrito {
+            background-color:map-get($color, color4 );
+            padding: 4rem 0;
+            border-radius: 10px;
+            text-align: center;
+
+            h2 {
+                color: map-get($color, color5 );
+                font-size: 2em;
+                margin: 0;
+            }
+        }
+    }
 }

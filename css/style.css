@@ -72,6 +72,23 @@ main {
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff; }
 
+.mainCarrito {
+  background-color: #797979;
+  padding: 2rem 0; }
+  .mainCarrito .containerCarrito {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; }
+    .mainCarrito .containerCarrito .cartelCarrito {
+      background-color: #ffa600;
+      padding: 4rem 0;
+      border-radius: 10px;
+      text-align: center; }
+      .mainCarrito .containerCarrito .cartelCarrito h2, .mainCarrito .containerCarrito .cartelCarrito .h2 {
+        color: white;
+        font-size: 2em;
+        margin: 0; }
+
 /*footer*/
 footer {
   background-color: blanchedalmond;
@@ -142,7 +159,11 @@ body {
       width: 30%; }
 
 /*media */
-@media (min-width: 768px) {
+@media (max-width: 47.9375rem) {
+  .carousel-caption {
+    font-size: 0.8rem; } }
+
+@media (min-width: 48rem) {
   .carousel-caption {
     bottom: 20%; } }
 

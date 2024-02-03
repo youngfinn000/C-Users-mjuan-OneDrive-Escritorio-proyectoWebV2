@@ -1,9 +1,18 @@
 /*media */
-@media (min-width: 768px) {
+
+@media (max-width: 47.9375rem) {
+    .carousel-caption {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 48rem) {
     .carousel-caption {
         bottom: 20%;
     }
 }
+
+
 
 /*cards*/
 .card {
